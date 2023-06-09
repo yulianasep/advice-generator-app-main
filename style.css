@@ -1,0 +1,82 @@
+:root {
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+  }
+
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: var(--Dark-Blue);
+    
+}
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Grayish-Blue);
+    height: 40vh;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+footer{
+    position: relative;
+    bottom: -21%;
+}
+
+.advice-title{
+    color: var(--Neon-Green);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.advice-text{
+    color: var(--Light-Cyan);
+    padding-bottom: 3rem;
+    font-size: 28px;
+}
+
+.button{
+    background-color: var(--Neon-Green);
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.button:hover{
+    background-color: var(--Neon-Green);
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgb(64, 223, 202);
+    transition: all 0.2s ease;
+}
+
+.button-icon{
+    width: 1.3rem;
+}
+
+.divide-card img{
+    width: 100%;
+}
