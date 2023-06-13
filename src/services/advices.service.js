@@ -5,6 +5,6 @@ export async function fetchAdvices() {
   if (!response.ok) {
     throw new Error("Something went wrong with the fetch");
   }
-  console.log(response);
-  return response.json();
+  const dataResponse = await response.json(); 
+  return dataResponse; 
 }
