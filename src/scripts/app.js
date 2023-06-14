@@ -4,7 +4,7 @@ import { fetchAdvices } from "../services/index.js";
 
 const $adviceTitle = document.querySelector(".advice-title");
 const $adviceText = document.querySelector(".advice-text");
-const $searchBtn = document.querySelector(".button")
+const $searchBtn = document.querySelector(".button");
 
 function updateAdvice(adviceData) {
     $adviceTitle.innerHTML = adviceData.slip.id;
