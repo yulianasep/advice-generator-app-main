@@ -7,8 +7,8 @@ const $adviceText = document.querySelector(".advice-text");
 const $searchBtn = document.querySelector(".button");
 
 function updateAdvice(adviceData) {
-    $adviceTitle.innerHTML = adviceData.slip.id;
-    $adviceText.innerHTML = adviceData.slip.advice;
+    $adviceTitle.innerHTML = "ADVACE# " + (adviceData.slip.id);
+    $adviceText.innerHTML =  '"' + (adviceData.slip.advice) + '"';
 }
 
 async function searchAdvice(){
@@ -16,8 +16,7 @@ async function searchAdvice(){
        const adviceData = await fetchAdvices();
         updateAdvice(adviceData)
     } catch (error) {
-        throw new Error("Data not found")
-        
+        console.error("Data not found: " + error)
     }
 }
 
