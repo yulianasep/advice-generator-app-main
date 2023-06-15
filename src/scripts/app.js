@@ -1,14 +1,22 @@
 "use strict";
 
 import { fetchAdvices } from "../services/index.js";
+import {$} from "../utils/index.js"
 
-const $adviceTitle = document.querySelector(".advice-title");
-const $adviceText = document.querySelector(".advice-text");
-const $searchBtn = document.querySelector(".button");
+const $adviceTitle = $(".advice-title");
+const $adviceText = $(".advice-text");
+const $searchBtn = $(".button");
 
-function updateAdvice(adviceData) {
-    $adviceTitle.innerHTML = "ADVACE# " + (adviceData.slip.id);
-    $adviceText.innerHTML =  '"' + (adviceData.slip.advice) + '"';
+/* function updateAdvice(advace = {slip:{id:'', advice: ''}}) {
+    const {slip: {id,advice }} = advace;
+    $adviceTitle.innerHTML = `ADVACE# ${id}`;
+    $adviceText.innerHTML = `"${advice}"`;
+} */
+
+function updateAdvice({slip}) {
+    const {id, advice} = slip;
+    $adviceTitle.innerHTML = `ADVICE# ${id}`;
+    $adviceText.innerHTML = `"${advice}"`;
 }
 
 async function searchAdvice(){

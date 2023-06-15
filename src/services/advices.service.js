@@ -1,4 +1,4 @@
-import { BadResponseError } from "../assets/error/typeError.js";
+import { BadResponseError } from "../error/typeError.js";
 const API_URL = "https://api.adviceslip.com/advice";
 
 export async function fetchAdvices() {
