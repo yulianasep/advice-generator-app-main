@@ -27,7 +27,7 @@ body{
 
 .advice {
     background-color: var(--Dark-Grayish-Blue);
-    height: 40vh;
+    height: 100%;
     width: 500px;
     position: relative;
     border-radius: 1rem;
@@ -45,7 +45,12 @@ body{
 
 .advice-title{
     color: var(--Neon-Green);
-    font-size: 12px;
+    font-size: 25px;
+}
+
+.advice-hours{
+    color: var(--Neon-Green);
+    font-size: 18px;
 }
 
 .advice-text{
@@ -61,6 +66,10 @@ picture{
 
 picture img{
     margin-bottom:1rem;
+}
+
+.divide-footer-img{
+    margin-bottom: 5rem;
 }
 
 footer{

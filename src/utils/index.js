@@ -1,2 +1,5 @@
 import {$} from './document.js'
-export {$}
+import {getCurrentDataTime} from './getCurrentDataTime.js'
+
+export {$, getCurrentDataTime}
+
